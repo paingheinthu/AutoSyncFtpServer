@@ -1,2 +1,6 @@
-# AutoSyncFtpServer
-Auto Sync local pc to ftp server. read configure for config file and save error msg in log file
+# Auto File Upload local to FTP server with python
+
+Auto file Upload in two day of week day.
+
+
+
