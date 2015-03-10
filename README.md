@@ -8,7 +8,7 @@ Requirements
 
 Setup Config.ini file
 ====================
-
+```
 [auto_sync]
 st_date = 3
 en_date = 6
@@ -22,7 +22,7 @@ cmd=rm -r
 cr_date = 2013-02-02
 ctrl_time=15:00:00
 ctrl = 0
-
+```
 Run script
 =============
 python sync.py

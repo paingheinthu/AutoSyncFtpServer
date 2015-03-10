@@ -127,6 +127,7 @@ def main():
     usrname = str(parser_config(2,'usrname',''))
     svr_pass = str(parser_config(2,'pass',''))
     cmd = str(parser_config(2,'cmd',''))
+    
     if CheckDay(st_date,en_date):
         if Delete_File(path,ext,cmd):
             if Check_log(src_path):
