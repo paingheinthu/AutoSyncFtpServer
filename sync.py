@@ -21,7 +21,7 @@ __version__='1.0'
 
 def LogFile(Logname): #Process Log Save File
     def _wrapper(arg):
-        log_text=open("log.txt","a")
+        log_text=open("data.log","a")
         lst=str(Logname(arg))
         log_text.write(lst)
         log_text.close
@@ -38,7 +38,7 @@ def file_argv(val):
 def CheckDay(st_date,en_date): #process Start Check Day
     try:
         chk_date=parser_config(2,'cr_date','')
-        if datetime.strptime(chk_date,'%Y-%m-%d').date()<=now.date() or parser_config(2,'ctrl','') ==0:
+        if datetime.strptime(chk_date,'%Y-%m-%d').date()<=now.date() or parser_config(2,'ctrl','') == 0:
             if now.isoweekday()==int(st_date) or now.isoweekday()==int(en_date) and now.time().isoformat()>str(parser_config(2,'ctrl_time','')):
                 return True
             return False
